@@ -17,13 +17,11 @@
                 
             </ListView>-->
 
-        <ListView ItemsSource="{Binding Number_of_lesson}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Subject}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
+        <ListView ItemsSource="{Binding All}">
+           
         </ListView>
+       
+        
         <!--<Label FontSize="Medium" Text="Предмет" />
         <Label FontSize="Medium" FontAttributes="Bold"  Text="{Binding Subject}" />
         <Label FontSize="Medium" Text="Викладач" />

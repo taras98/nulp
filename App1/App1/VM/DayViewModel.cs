@@ -17,17 +17,16 @@ namespace App1.VM
         private List<string> teacher;
         private List<string> where;
         private List<string> type;
-        private List<object> subgroup;
         private List<int> fraction;
         private List<bool> active;
-        private string test;
+        private List<string> all;
 
 
 
         public int count_of_lessons { get; set; }
         public string group { get; set; }
         public int number_of_day { get; set; }
-        //  public int count_of_lessons { get; set; }
+        public string subgroup { get; set; }
 
 
         public string Day
@@ -84,15 +83,6 @@ namespace App1.VM
                 OnPropertyChanged("Type");
             }
         }
-        public List<object> Subgroup
-        {
-            get { return subgroup; }
-            private set
-            {
-                subgroup = value;
-                OnPropertyChanged("subgroup");
-            }
-        }
         public List<int> Fraction
         {
             get { return fraction; }
@@ -112,12 +102,21 @@ namespace App1.VM
             }
         }
 
+        public List<string> All
+        {
+            get { return all; }
+            private set
+            {
+                all = value;
+                OnPropertyChanged("All");
+            }
+        }
 
-
-        public DayViewModel(string _group, int _number_of_day)
+        public DayViewModel(string _group, int _number_of_day, string _subgroup)
         {
             group = _group;
-            _number_of_day = number_of_day;
+            number_of_day = _number_of_day;
+            subgroup = _subgroup;
             LoadDataCommand = new Command(LoadData);
         }
 
@@ -144,25 +143,32 @@ namespace App1.VM
                     Teacher = new List<string> { };
                     Where = new List<string> { };
                     Type = new List<string> { };
-                    Subgroup = new List<object> { };
                     Fraction = new List<int> { };
                     Active = new List<bool> { };
+                    All = new List<string> { };
 
-                    for (int i = 0; i < x.response.items[number_of_day].items.Capacity; i++)
+                    for (int i = 0; i < x.response.items[number_of_day].items.Count; i++)
                     {
-                        Number_of_lesson.Add(x.response.items[number_of_day].items[i].title);
-
                         for (int j = 0; j < x.response.items[number_of_day].items[i].items.Count; j++)
                         {
-
-
-                            Subject.Add(x.response.items[number_of_day].items[i].items[j].title);
-                            Teacher.Add(x.response.items[number_of_day].items[i].items[j].teacher);
-                            Where.Add(x.response.items[number_of_day].items[i].items[j].where);
-                            Type.Add(x.response.items[number_of_day].items[i].items[j].type);
-                            Subgroup.Add(x.response.items[number_of_day].items[i].items[j].subgroup);
-                            Fraction.Add(x.response.items[number_of_day].items[i].items[j].fraction);
-                            Active.Add(x.response.items[number_of_day].items[i].items[j].active);
+                            if (x.response.items[number_of_day].items[i].items[j].subgroup.ToString() == subgroup || x.response.items[number_of_day].items[i].items[j].subgroup.ToString() == "False")
+                            {
+                                if (x.response.items[number_of_day].items[i].items[j].active)
+                                {
+                                    Number_of_lesson.Add(x.response.items[number_of_day].items[i].title);
+                                    Subject.Add(x.response.items[number_of_day].items[i].items[j].title);
+                                    Teacher.Add(x.response.items[number_of_day].items[i].items[j].teacher);
+                                    Where.Add(x.response.items[number_of_day].items[i].items[j].where);
+                                    Type.Add(x.response.items[number_of_day].items[i].items[j].type);
+                                    All.Add(
+                                        x.response.items[number_of_day].items[i].title + " " +
+                                        x.response.items[number_of_day].items[i].items[j].title + " " +
+                                        x.response.items[number_of_day].items[i].items[j].teacher + " " +
+                                        x.response.items[number_of_day].items[i].items[j].where + " " +
+                                        x.response.items[number_of_day].items[i].items[j].type + " "
+                                        );
+                                }
+                            }
                         }
                     }
 
