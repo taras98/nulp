@@ -1,0 +1,232 @@
+{
+  "response": {
+    "count": 4,
+    "items": [
+      {
+        "title": "Пн",
+        "items": [
+          {
+            "title": "2",
+            "items": [
+              {
+                "title": "Основи охорони праці та безпека життєдіяльності",
+                "teacher": "Мохняк С.М.",
+                "where": "307 III н.к.",
+                "type": "Практична",
+                "subgroup": false,
+                "fraction": 1,
+                "active": false
+              }
+            ]
+          },
+          {
+            "title": "3",
+            "items": [
+              {
+                "title": "Основи психології і педагогіки",
+                "teacher": "Бущак Г.А.",
+                "where": "411 I н.к.",
+                "type": "Лекція",
+                "subgroup": false,
+                "fraction": 2,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "4",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Майхер В.Ю.",
+                "where": "808 V н.к.",
+                "type": "Лабораторна",
+                "subgroup": 2,
+                "fraction": 1,
+                "active": false
+              }
+            ]
+          },
+          {
+            "title": "5",
+            "items": [
+              {
+                "title": "Основи охорони праці та безпека життєдіяльності",
+                "teacher": "Мохняк С.М.",
+                "where": "303 III н.к.",
+                "type": "Лабораторна",
+                "subgroup": false,
+                "fraction": 2,
+                "active": true
+              },
+              {
+                "title": "Основи психології і педагогіки",
+                "teacher": "Бущак Г.А.",
+                "where": "209 I н.к.",
+                "type": "Практична",
+                "subgroup": false,
+                "fraction": 1,
+                "active": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Вт",
+        "items": [
+          {
+            "title": "4",
+            "items": [
+              {
+                "title": "Основи охорони праці та безпека життєдіяльності",
+                "teacher": "Федевич О.Є.",
+                "where": "321 I н.к.",
+                "type": "Лекція",
+                "subgroup": false,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "5",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Шкраб Р.Р.",
+                "where": "810в V н.к.",
+                "type": "Лабораторна",
+                "subgroup": 1,
+                "fraction": 2,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "6",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Майхер В.Ю.",
+                "where": "302 XXIX н.к.",
+                "type": "Лабораторна",
+                "subgroup": 1,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Чт",
+        "items": [
+          {
+            "title": "1",
+            "items": [
+              {
+                "title": "Соціологія",
+                "teacher": "Андрейчук С.К.",
+                "where": "321 I н.к.",
+                "type": "Лекція",
+                "subgroup": false,
+                "fraction": 1,
+                "active": false
+              }
+            ]
+          },
+          {
+            "title": "2",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Квятковський Б.О.",
+                "where": "809 V н.к.",
+                "type": "Лекція",
+                "subgroup": false,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "3",
+            "items": [
+              {
+                "title": "Соціологія",
+                "teacher": "Андрейчук С.К.",
+                "where": "407 I н.к.",
+                "type": "Практична",
+                "subgroup": false,
+                "fraction": 2,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "4",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Шкраб Р.Р.",
+                "where": "810а V н.к.",
+                "type": "Лабораторна",
+                "subgroup": 1,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Пт",
+        "items": [
+          {
+            "title": "1",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Квятковський Б.О.",
+                "where": "217 I н.к.",
+                "type": "Лекція",
+                "subgroup": false,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "4",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Майхер В",
+                "where": "810в V н.к.",
+                "type": "Лабораторна",
+                "subgroup": 2,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          },
+          {
+            "title": "5",
+            "items": [
+              {
+                "title": "Програмування для мобільних платформ",
+                "teacher": "Майхер В",
+                "where": "810в V н.к.",
+                "type": "Лабораторна",
+                "subgroup": 2,
+                "fraction": 3,
+                "active": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

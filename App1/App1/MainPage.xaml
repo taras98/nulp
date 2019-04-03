@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+
+         <!--Place new controls here-->
+        <Button Text="Отримати розклад" Command="{Binding LoadDataCommand}"/>
+        <Label FontSize="Medium" Text="День" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Day}" />
+        <Label FontSize="Medium" Text="Пара" />
+       
+            <!--<ListView  ItemsSource="{Binding Subject}" >               
+                
+            </ListView>-->
+
+        <ListView ItemsSource="{Binding Number_of_lesson}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Subject}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <!--<Label FontSize="Medium" Text="Предмет" />
+        <Label FontSize="Medium" FontAttributes="Bold"  Text="{Binding Subject}" />
+        <Label FontSize="Medium" Text="Викладач" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Teacher}" />
+        <Label FontSize="Medium" Text="Місце" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Where}" />
+        <Label FontSize="Medium" Text="Тип" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Type}" />
+        <Label FontSize="Medium" Text="Субгрупа" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Subgroupt}" />
+        <Label FontSize="Medium" Text="Фракція" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Fraction}" />
+        <Label FontSize="Medium" Text="Активність" />
+        <Label FontSize="Medium" FontAttributes="Bold" Text="{Binding Active}" />-->
+
+    </StackLayout>
+
+    
+
+</ContentPage>
