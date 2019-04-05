@@ -18,7 +18,7 @@ namespace App1
         {
             InitializeComponent();
 
-            viewModel = new DayViewModel("КН-211", 2, "1");
+            viewModel = new DayViewModel("ПІ-42", 0);
             BindingContext = viewModel;
 
         }
